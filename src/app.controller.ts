@@ -20,4 +20,9 @@ export class AppController {
       res.render("negative", sentiment.result)
     }
   }
+
+  @Get("stats")
+  getStats() {
+    return this.appService.statusReport();
+  }
 }

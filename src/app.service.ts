@@ -11,7 +11,11 @@ export class AppService {
     return sentiment;
   }
 
-  getUptime(): number {
-    return process.uptime();
+  statusReport() {
+    return {
+      uptime: process.uptime(),
+      memoryUsage: process.memoryUsage(),
+      cpuUsage: process.cpuUsage()
+    }
   }
 }
