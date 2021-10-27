@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 </head>
+
 <body>
-    <form method="get" action="/sentiment">
-        <label for="message">Analyze:</label><br>
-        <input type="text" id="message" name="message" value="Example Message"><br>
-        <input type="submit" value="Submit">
-      </form> 
+    <div class="ml-2 mt-2" style="position: absolute;left:45%">
+        <form method="get" action="/sentiment">
+            <label for="message">Analyze:</label><br>
+            <input type="text" id="message" name="message" value="good bad terrible amazing example"><br>
+            <input type="submit" value="Submit" class="mt-2">
+        </form>
+    </div>
+
 </body>
+
 </html>
